@@ -1,0 +1,16 @@
+#To Initialize a git repository
+
+git init
+
+
+
+#To check history of files and commits
+
+git status
+git log
+
+
+#To add/remove files from the staging area
+
+git add 'filename'
+git reset 'filename'
