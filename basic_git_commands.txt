@@ -14,3 +14,25 @@ git log
 
 git add 'filename'
 git reset 'filename'
+
+#To commit
+
+git commit -m 'message'
+
+
+
+#To check the difference between 'Working Directory' and 'Staging Area'
+git diff
+#To check the difference between 'Staging Area' and 'Repository'
+git diff --staged
+#To check the difference between two commits
+git diff 'id_old' 'id_new'
+
+
+
+#Branches
+
+git branch #(shows which branch you are on)
+git branch 'name_of_branch' #(creates a new branch)
+git checkout 'name_of_branch' #(to switch to a different branch)
+
