@@ -52,4 +52,5 @@ git remote add 'name_of_remote' url
 git remote -v
 #To send changes to remote
 git push 'name_of_remote' 'name_of_branch'
-
+#To pull changes from remote
+git pull 'name_of_remote' 'name_of_branch'
