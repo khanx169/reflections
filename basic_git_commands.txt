@@ -8,6 +8,7 @@ git init
 
 git status
 git log
+git log --graph --oneline 'branch1' 'branch2' #(To see a visual representation of the commit history for 2  branche)
 
 
 #To add/remove files from the staging area
@@ -27,6 +28,9 @@ git diff
 git diff --staged
 #To check the difference between two commits
 git diff 'id_old' 'id_new'
+#To check the difference between a commit and its parent (useful after merging
+#branches)
+git show 'commit_id'
 
 
 
@@ -35,4 +39,6 @@ git diff 'id_old' 'id_new'
 git branch #(shows which branch you are on)
 git branch 'name_of_branch' #(creates a new branch)
 git checkout 'name_of_branch' #(to switch to a different branch)
-
+git checkout -b 'new_branch_name' #(to create a new branch and preserve commits in the detached Head state)
+git merge 'branch1' 'branch2' #To merge to branches. git merge always merges all the specified branches into the currently checked out branch
+ 
