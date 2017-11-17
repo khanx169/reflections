@@ -45,7 +45,6 @@ git merge 'branch1' 'branch2' #To merge to branches. git merge always merges all
 
 
 "GIT HUB"
-
 #To initialize a remote 
 git remote add 'name_of_remote' url
 #To check the remote/s name and url
@@ -54,3 +53,12 @@ git remote -v
 git push 'name_of_remote' 'name_of_branch'
 #To pull changes from remote
 git pull 'name_of_remote' 'name_of_branch'
+
+#Another way of lookig at git pull (especially useful when local changes and
+#remote changes might cause a conflict)
+
+git pull 'origin' 'master' =    1. git fetch origin   #git fetch only updates the local copy of the remote master 
+				2. git merge master origin/master #this merges the local copy of the remote master 									with the local master
+
+
+
